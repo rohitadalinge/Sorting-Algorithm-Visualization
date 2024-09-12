@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cylindrical-box"></div>
+    <div class="text">
+        <h1>Sorting Algorithm Visualization</h1>
+    </div>
+
+    <div class="container">
+        <div id="bars"></div>
+        <div class="controls">
+            <div class="buttons">
+                <button onclick="randomizeBars()">Randomize</button>
+                <button onclick="sortBars()">Sort</button>
+            </div>
+            <div class="sort-algorithm">
+                <label for="algorithm-select">Sort Algorithm:</label>
+                <select id="algorithm-select">
+                    <option value="bubble">Bubble Sort</option>
+                    <option value="selection">Selection Sort</option>
+                    <option value="insertion">Insertion Sort</option>
+                    <option value="quick">Quick Sort</option>
+                </select>
+                                <!-- Timer Display -->
+        
+            </div>
+
+        </div>
+        <!-- <div id="timer" class="timer">Time: 0s</div> -->
+    </div>  
+
+    <!-- Timer Display -->
+    <div id="timer" class="timer">Time: 0s</div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
